@@ -1,5 +1,5 @@
 # postgres-snowflake-converter
-Convert Postgres store procedures or functions to snowflake procedures
+Convert Postgres stored procedures or functions to snowflake procedures
 The converted will help to convert the Postgres functions into javascript store procedures(snowflake).
 To run this code, you only need to install python3 and the required libraries. 
 
