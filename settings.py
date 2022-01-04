@@ -2,18 +2,18 @@ import os
 import snowflake.connector
 
 class Settings:
-    SF_ACCOUNT = os.environ.get("SF_ACCOUNT", "dza89750")
-    SF_USER = os.environ.get("SF_USER", "TALEND_CLOUD")
-    SF_PASSWORD = os.environ.get("SF_PASSWORD", "%8kxmsQe4&p6")
+    SF_ACCOUNT = os.environ.get("SF_ACCOUNT", "yrt76")
+    SF_USER = os.environ.get("SF_USER", "DB_USER")
+    SF_PASSWORD = os.environ.get("SF_PASSWORD", "%******")
     SF_ROLE = "SYSADMIN"
-    SF_DATABASE = "retail_datawarehouse"
+    SF_DATABASE = "warehouse"
     SF_SCHEMA = "dbo"
     SF_WAREHOUSE = "DATA_LOADING_WH"
     TIMESTAMP_NTZ_OUTPUT_FORMAT = "YYYY-MM-DD HH24:MI:SS"
-    INPUT_FOLDER_PATH = 'D:\\ASM\\Snowflake\\Git\\ASM Retail DW\\awsdatawarehouse\\dbo\\Function\\'
-    ERROR_FOLDER_PATH = 'D:\\ASM\\Snowflake\\Git\\ASM Retail DW\\awsdatawarehouse\\dbo\\Function\\Errors'
-    SF_CONVERTED_FOLDER_PATH = 'D:\\ASM\\Snowflake\\Git\\ASM Retail DW\\awsdatawarehouse\\dbo\\Function\\Converted'
-    SF_ERROR_FOLDER_PATH = 'D:\\ASM\\Snowflake\\Git\\ASM Retail DW\\awsdatawarehouse\\dbo\\Function\\SFError'
+    INPUT_FOLDER_PATH = 'D:\\DS\\Snowflake\\Git\\dbo\\Function\\'
+    ERROR_FOLDER_PATH = 'D:\\DS\\Snowflake\\Git\\dbo\\Function\\Errors'
+    SF_CONVERTED_FOLDER_PATH = 'D:\\DS\\Snowflake\\Git\\dbo\\Function\\Converted'
+    SF_ERROR_FOLDER_PATH = 'D:\\DS\\Snowflake\\Git\\Function\\SFError'
     
     def get_snowflake_connection(self):
         ctx = snowflake.connector.connect(
